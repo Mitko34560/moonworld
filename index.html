@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mono World — Магазин привилегий
+</title>
+
+    <meta name="description" content="Играйте в Minecraft на сервере Mono World. Присоединяйтесь к нашему сообществу и получите уникальные привилегии. Купите донат и наслаждайтесь игрой на одном из лучших серверов Minecraft. Откройте для себя мир Mono World!">
+
+    <meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+
+<!-- CSRF Token -->
+<meta name="csrf-token" content="AlEHcgqc6BC0o8FG1vRb4DvWp2QjjsesdNnmo5G0">
+
+<meta name="keywords" content="minecraft, игра minecraft, играть в minecraft, minecraft classic, minecraft бесплатно, minecraft скачать, minecraft 1.20, minecraft серверы, сервер minecraft, бесплатный minecraft сервер, домер minecraft, домер grief, Mono World minecraft, сервер Mono World, купить донат minecraft, купить донат Mono World, донат minecraft, рили ворлд сервер, сайт Mono World, описание привилегий Mono World, донат на Mono World, привилегии Mono World, minecraft сервера с донатом, бесплатные привилегии Minecraft, рили ворлд майнкрафт, майнкрафт сервер Mono World, популярные minecraft серверы, играть на сервере домера">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="ru" />
+
+<!-- Scripts -->
+<script src="/js/app.js" defer></script>
+<script src="/js/public.js" defer></script>
+<script src="/js/clipboard.min.js" defer></script>
+<script src="/js/main.js" defer></script>
+
+<!-- Styles -->
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<link rel="stylesheet" href="/css/style.min.css" />
+<link rel="stylesheet" href="/css/media-queries.min.css" />
+<link rel="stylesheet" href="/css/custom.css" />
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+<link rel="icon" type="image/png" href="/images/custom-logo.png">
+
+<meta name="interkassa-verification" content="1a4b5794d77db62eb89c363f576572cb" />
+    </head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div class="wrapper" style="
+        min-height: calc(100% - 203.33px);
+    ">
+        <div id="app">
+            <header>
+    <a href="/index.html" class="logotype">
+        <div class="pic"></div>
+        <div class="logo_text">
+            <span>mono</span>
+            <span>world</span>
+        </div>
+    </a>
+    <nav id="header_menu">
+        <ul>
+            <li>
+                <a href="/index.html"><i class="fas fa-home"></i><span>Главная</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" data-page="store" id="goToStore"><i class="fas fa-shopping-cart"></i><span>Магазин</span></a>
+            </li>
+            <li>
+                <a href="/description.html"><i class="fas fa-tag"></i><span>Правила</span></a>
+            </li>
+            <li>
+                <a href="/description.html"><i class="fas fa-file-alt"></i><span>Описание привилегий</span></a>
+            </li>
+            <li>
+                <a href="//f.reallyworld.me"><i class="far fa-comment-alt"></i><span>Форум</span></a>
+            </li>
+            <li>
+                <a href="/support.html"><i class="far fa-heart"></i><span>Поддержка</span></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <lc-button></lc-button> -->
+
+    <a href="javascript:void(0);" id="menu" class="button menu-button" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </a>
+</header>
+            
+<section id="head">
+    <div id="head_pics">
+        <div class="pics_lines"></div>
+        <div class="flying"></div>
+        <div class="pic_text">MonoWorld</div>
+
+        <div class="parallax block_1"></div>
+        <div class="parallax block_2"></div>
+        <div class="parallax block_3"></div>
+        <div class="parallax block_4"></div>
+        <div class="parallax block_5"></div>
+        <div class="parallax block_6"></div>
+        <div class="parallax block_7"></div>
+        <div class="parallax block_8"></div>
+        <div class="parallax block_9"></div>
+        <div class="parallax block_10"></div>
+    </div>
+
+    <div id="head_top" class="br">
+        <h1>
+            Mono World<br />
+            Начало новой эры
+        </h1>
+        <h5>
+            Открой для себя огромные миры<br />
+            полные веселья и миллионов друзей
+        </h5>
+        <!-- <a href="#" id="play" class="button"><span>Начать играть</span><i class="far fa-play-circle"></i></a> -->
+    </div>
+
+    <div class="head_bottom">
+        <div class="bg br"></div>
+        <div class="s-online-wrapp">
+            <div class="s-online">
+                <i class="far fa-star"></i>
+                <div class="server">
+                    <h6>Наш сервер</h6>
+                    <p class="online">Онлайн: <span id="online">0</span>/<span id="slots">9000</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" id="progress" style="width: 0%;"></div>
+                    </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="join_us">
+    <div class="join_us_arrow"></div>
+    <div></div>
+    <div class="left">
+        <h2>
+            Присоединяйтесь к нам<br />
+            прямо сейчас и начинайте игру !
+        </h2>
+        <h5>
+            Выбери свою роль и отыгрывай ее.<br />
+            У нас можно стать кем угодно, даже космонавтом!
+        </h5>
+    </div>
+
+    <div class="copy_ip">
+        <span class="left">Рекомендуемая версия 1.16.5</span>
+        <a href="javascript:void(0)" id="copy_ip_button" class="button button-orange right my-copy-clipboard" data-clipboard-text="mailing-charts.gl.joinmc.link">
+            <span>mailing-charts.gl.joinmc.link</span><i class=" far fa-clone"></i>
+        </a>
+    </div>
+    <div class="clear"></div>
+</section>
+            <div id="store">
+<section class="store-static">
+  <div class="store-heading"><h2>Магазин</h2><p>Выберите привилегию или набор для сервера.</p></div>
+  <div class="store-tabs">
+    <a href="#category-1">Гриф. Выживание</a>
+    <a href="#category-2">Анархия</a>
+    <a href="#category-5">Риллики (Донат Валюта)</a>
+    <a href="#category-10">СТО</a>
+  </div>
+  <div class="store-category" id="category-1">
+    <h3>Гриф. Выживание</h3>
+    <div class="store-grid">
+      <article class="store-card">
+        <div class="store-art"><span>GOD</span></div>
+        <h4>GOD</h4>
+        <div class="store-price"><span class="old-price">7777 руб.</span><strong>4444 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>3 сундука с донат вещами</h4>
+        <div class="store-price"><strong>399 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>5 сундуков с донат вещами</h4>
+        <div class="store-price"><strong>649 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>10 сундуков с донат вещами</h4>
+        <div class="store-price"><strong>1299 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>HELPER</span></div>
+        <h4>HELPER</h4>
+        <div class="store-price"><strong>6666 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>DRAGON</span></div>
+        <h4>DRAGON</h4>
+        <div class="store-price"><strong>1899 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>IMPERATOR</span></div>
+        <h4>IMPERATOR</h4>
+        <div class="store-price"><strong>999 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>MAGISTER</span></div>
+        <h4>MAGISTER</h4>
+        <div class="store-price"><strong>589 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>OVERLORD</span></div>
+        <h4>OVERLORD</h4>
+        <div class="store-price"><strong>289 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>AVENGER</span></div>
+        <h4>AVENGER</h4>
+        <div class="store-price"><strong>129 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>TITAN</span></div>
+        <h4>TITAN</h4>
+        <div class="store-price"><strong>89 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>HERO</span></div>
+        <h4>HERO</h4>
+        <div class="store-price"><strong>39 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>3 сундука с Донатом</h4>
+        <div class="store-price"><strong>119 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>10 сундуков с Донатом</h4>
+        <div class="store-price"><strong>249 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>25 сундуков с Донатом</h4>
+        <div class="store-price"><strong>399 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>3 сундука с Валютой</h4>
+        <div class="store-price"><strong>46 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>10 сундуков с Валютой</h4>
+        <div class="store-price"><strong>149 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>25 сундуков с Валютой</h4>
+        <div class="store-price"><strong>399 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>3 сундука с Префиксами</h4>
+        <div class="store-price"><strong>59 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>10 сундуков с Префиксами</h4>
+        <div class="store-price"><strong>149 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>25 сундуков с префиксами</h4>
+        <div class="store-price"><strong>239 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>OTHER</span></div>
+        <h4>Разбан</h4>
+        <div class="store-price"><strong>349 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>OTHER</span></div>
+        <h4>Размут</h4>
+        <div class="store-price"><strong>119 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>3 сундука с Китами</h4>
+        <div class="store-price"><strong>299 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>5 сундуков с Китами</h4>
+        <div class="store-price"><strong>489 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>10 сундуков с Китами</h4>
+        <div class="store-price"><strong>799 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+    </div>
+  </div>
+  <div class="store-category" id="category-5">
+    <h3>Риллики (Донат Валюта)</h3>
+    <div class="store-grid">
+      <article class="store-card">
+        <div class="store-art"><span>COIN</span></div>
+        <h4>50 Рилликов</h4>
+        <div class="store-price"><strong>50 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>COIN</span></div>
+        <h4>100 Рилликов</h4>
+        <div class="store-price"><strong>100 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>COIN</span></div>
+        <h4>250 Рилликов</h4>
+        <div class="store-price"><strong>250 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>COIN</span></div>
+        <h4>500 Рилликов</h4>
+        <div class="store-price"><strong>500 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>1 сундук с Рилликами</h4>
+        <div class="store-price"><strong>99 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>3 сундука с Рилликами</h4>
+        <div class="store-price"><strong>269 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>CASE</span></div>
+        <h4>5 сундуков с Рилликами</h4>
+        <div class="store-price"><strong>419 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>COIN</span></div>
+        <h4>1700 Рилликов (БОНУС +200)</h4>
+        <div class="store-price"><strong>1500 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>COIN</span></div>
+        <h4>2500 Рилликов (БОНУС +500)</h4>
+        <div class="store-price"><strong>2000 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>COIN</span></div>
+        <h4>699 Рилликов</h4>
+        <div class="store-price"><strong>699 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+      <article class="store-card">
+        <div class="store-art"><span>COIN</span></div>
+        <h4>{count} Рилликов</h4>
+        <div class="store-price"><strong>500 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+    </div>
+  </div>
+  <div class="store-category" id="category-10">
+    <h3>СТО</h3>
+    <div class="store-grid">
+      <article class="store-card">
+        <div class="store-art"><span>OTHER</span></div>
+        <h4>Проходка на СТО игроков</h4>
+        <div class="store-price"><strong>999 руб.</strong></div>
+        <a class="button button-orange" href="javascript:void(0)"><span>Купить</span><i class="fas fa-shopping-cart"></i></a>
+      </article>
+    </div>
+  </div>
+</section>
+</div>
+
+<section id="social">
+    <a href="//vk.com/reallyworlds" target="_blank">
+        <div>
+            <i class="fab fa-vk social-vk"></i>
+            <span>Мы ВКонтакте</span>
+        </div>
+    </a>
+    <a href="//f.reallyworld.me">
+        <div>
+            <i class="far fa-comment-alt social-forum"></i>
+            <span>Форум</span>
+        </div>
+    </a>
+    <a href="//www.youtube.com/channel/UCb5oqCZ4AfmfXbgHsfei0tQ" target="_blank">
+        <div>
+            <i class="fab fa-youtube social-yt"></i>
+            <span>Наш YouTube</span>
+        </div>
+    </a>
+    <a href="//discord.gg/reallyworld" target="_blank">
+        <div>
+            <i class="fab fa-discord social-discord"></i>
+            <span>Discord Сервер</span>
+        </div>
+    </a>
+</section>
+        </div>
+    </div>
+    <footer>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="/index.html" class="logotype">
+                <div class="pic"></div>
+                <div class="logo_text">
+                    <span>mono</span>
+                    <span>world</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p class="copy">© <script>document.write(new Date().getFullYear())</script> Mono World Все права защищены.</p>
+
+            
+            
+            
+        </div>
+
+        <div class="info">
+            <p>
+                Mono World не связан с MojangAB,<br />
+                Все средства идут на развитие проекта<br />
+                Коммерческая деятельность проекта<br />
+                соответствует <a href="/mojang.pdf">политике Mojang AB</a>.
+            </p>
+            <a href="/public_offer.pdf">Договор Оферты</a>
+            <a href="/privacy.pdf">Политика обработки персональных данных</a>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <a href="/index.html">Главная</a>
+                <a href="//f.reallyworld.me">Форум</a>
+                <a href="/rules">Правила</a>
+                <a href="/description.html">Описание привилегий</a>
+            </nav>
+        </div>
+        <div class="social">
+            <div>
+                <span class="social-icon social-vk"><a href="//vk.com/reallyworlds" target="_blank"><i class="fab fa-vk"></i></a></span><span class="social-icon social-yt"><a href="//www.youtube.com/channel/UCb5oqCZ4AfmfXbgHsfei0tQ" target="_blank"><i class="fab fa-youtube"></i></a></span><span class="social-icon social-discord"><a href="//discord.gg/reallyworld" target="_blank"><i class="fab fa-discord"></i></a></span>
+            </div>
+        </div>
+    </div>
+</footer>    <!-- </div> -->
+    <script>
+    window.addEventListener('load', function() {
+        $('.copy-clipboard').on('click', function(e) {
+            e.preventDefault();
+            var that = $(this);
+            that.html('Скопировано!');
+            setTimeout(function() {
+                that.html(that.attr('data-clipboard-text'));
+            }, 1000);
+            let text = $(this).data('clipboard-text');
+            new ClipboardJS('.copy-clipboard');
+        });
+
+
+
+
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("accoactive");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+
+
+
+        setTimeout(function() {
+            app.monitor();
+        }, 100);
+    });
+</script>
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(76686226, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/76686226" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Mono World",
+        "url": "https://reallyworld.ru/",
+        "sameAs": [
+            "https://vk.com/reallyworlds",
+            "https://vk.com/reallyworld_tech"
+        ]
+    }
+</script>
+
+<!-- Разделение по доменам отключено — всегда .ru, ссылки не переписываем
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var l = document.links;
+    for(var i=0; i<l.length; i++) {
+        var href = l[i].href;
+        var host = window.location.hostname.split('.');
+        l[i].href = href.replace(/Mono World.(ru|me|org|online|undefined)/gi, 'Mono World.' + host[host.length-1]);
+    }
+  });
+</script>
+-->        <div id="toasts"></div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

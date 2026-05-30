@@ -1,0 +1,122 @@
+.logotype .pic {
+    background-image: url("../images/custom-logo.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.support-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.support-actions .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.support-note {
+    margin-top: 24px;
+    color: #7f8797;
+    line-height: 1.65;
+}
+
+section .support-list {
+    margin: 20px 0 0;
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+.store-static {
+    padding-top: 40px;
+}
+
+.store-heading {
+    margin-bottom: 24px;
+}
+
+.store-heading h2,
+.store-category h3 {
+    margin: 0 0 10px;
+}
+
+.store-heading p {
+    color: #7f8797;
+}
+
+.store-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.store-tabs a {
+    padding: 13px 18px;
+    border-radius: 8px;
+    color: #8d92b0;
+    background: #fff;
+    box-shadow: 0 12px 26px rgba(37, 37, 50, 0.08);
+    font-weight: 700;
+}
+
+.store-category {
+    margin-top: 34px;
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.store-card {
+    min-height: 310px;
+    padding: 22px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 34px rgba(35, 31, 32, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.store-card h4 {
+    margin: 0;
+    min-height: 48px;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.store-art {
+    height: 112px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff9700, #df5726);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+    box-shadow: inset 0 -20px 45px rgba(86, 26, 7, 0.18);
+}
+
+.store-price {
+    margin-top: auto;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.store-price strong {
+    font-size: 20px;
+}
+
+.old-price {
+    color: #9da3b9;
+    text-decoration: line-through;
+}
